@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main(){
+    
+    float m1,m2,m3,m4,m5;
+    float total,percentage;
+
+    printf("***Marksheet Generating System***\n");
+
+    //input
+    printf("Enter marks of subject 1:");
+    scanf("%f",&m1);
+
+    printf("Enter marks of subject 2:");
+    scanf("%f",&m2);
+    
+    printf("Enter marks of subject 3:");
+    scanf("%f",&m3);
+    
+    printf("Enter marks of subject 4:");
+    scanf("%f",&m4);
+    
+    printf("Enter marks of subject 5:");
+    scanf("%f",&m5);
+    
+    total=m1+m2+m3+m4+m5;
+    percentage=total/5;
+
+    //display
+    printf("\n-----Marksheet-----\n");
+    printf("Total Marks = %.2fn",total);
+    printf("Percentage = %.2f\n",percentage);
+
+    if(percentage >= 90)
+      printf("Grade : A+\n");
+    else if(percentage >= 80)
+      printf("Grade : A\n");
+    else if(percentage >= 70)
+      printf("Grade : B\n");
+    else if(percentage >= 60)
+      printf("Grade : C\n");
+    else if(percentage >= 40)
+      printf("Grade : D\n");
+    else
+      printf("Grade : F(fail)\n");
+
+
+    return 0;
+}
